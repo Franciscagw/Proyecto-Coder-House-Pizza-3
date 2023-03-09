@@ -72,14 +72,6 @@ footer{
 
 /* parte de index */ /* agregar grid gigante*/
 
-/*.mainHome { 
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center;
-}*/
-
 .mainHome h1 { 
     font-size: 100px;
     text-align: center;
@@ -155,21 +147,6 @@ footer{
     margin-top: 50px;
 }
 
-
-
-
-/*.divMasa img {
-    width: 500px;
-    height: 500px;
-}
-
-.divMasa {
-    display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-around;
-}*/
-
 .masaFlex {
     display: flex;
      flex-direction: column;
@@ -190,8 +167,6 @@ footer{
 /* grid example*/
 
 .divIdeas {
-    /*width: 500px;
-    height: 500px;*/
     display: grid;
     grid-template-areas: "verdes papas papas" "verdes anana anana"
     "tomates tomates bocaccino";
@@ -222,20 +197,6 @@ footer{
     height: 166px;
 }
 
-/*.sectIdeas{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
-}*/
-
-   
-
-/*.sectIdeas div{
-    width: 500px;
-    height: 500px;
-}*/
 
 /* parte de contacto*/
 
@@ -302,115 +263,6 @@ footer {
     margin-top: 25px;
    }
 }
-
-
-/* media queries para tablet
-@media screen and (max-width: 1150px) {
-
-    .titlee {
-        font-size: 35px;
-        margin-bottom: 35px;
-    }
-    
-    h2 {
-        font-size: 16.8px;
-    }
-
-    h3 {
-        font-size: 13.1px;
-    }
-
-    li {
-        font-size: 11.2px;
-    }
-}
-
-    /* parte de informacion extra tablet size*/
-
-   /* .divMasa img {
-        width: 350px;
-        height: 350px;
-    }
-
-    .masaFlex {
-        width: 350px;
-        height: 350px;
-    }
-
-    .masaFlex ol {
-        height: 210px;
-    }
-
-    /* grid example de extra info tablet size*/
-
-   /* .divIdeas {
-        width: 350px;
-        height: 350px;
-    }
-
-    #foto-anana {
-        width: 233px;
-        height: 116px;
-    }
-
-    #foto-bocaccino {
-        width: 116px;
-        height: 116px;
-
-    }
-
-    #foto-hojasv {
-        width: 116px;
-        height: 233px;
-    }
-
-    #foto-papasyhuevo{
-        width: 233px;
-        height: 116px;
-       
-    }
-
-    #foto-tomates{
-        width: 233px;
-        height: 116px;
-    }
-
-    .sectIdeas {
-     margin-top: 35px;
-    }
-
-    .sectIdeas div{
-        width: 350px;
-        height: 350px;
-    }
-
-    footer { 
-        margin: 35px;
-        padding-top: 35px;
-    } 
-}
-
-
-
-/* media queries para la parte de extra info size pequeños*/
-
-/*@media screen and (max-width: 840px) {
-
-    .divMasa {
-         flex-direction: column;
-         align-items: flex-start;
-      
-    }
-    
-    .sectIdeas {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    
-}
-
-
 
 
     
