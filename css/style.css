@@ -1,0 +1,416 @@
+* {margin: 0 ;padding: 0;}
+
+body { 
+    background-image: url( ../fotos/foto-fondo.jpg);
+    color: white; 
+    font-family: 'Bodoni Moda', serif;
+}
+
+nav {
+    font-size: 20px; 
+    display: inline-block; 
+    background-color: black; position: sticky;
+    width: 100%;
+}
+
+ul{ padding: 0px;}
+
+.navBar {
+    display: flex; 
+     align-content: stretch; 
+     flex-direction: row; 
+     flex-wrap: wrap; 
+     justify-content: space-evenly; 
+     align-items: center;
+}
+
+nav ul li { 
+    list-style-type: none;
+    text-decoration: none;
+
+} /* cambiar el color de los links de la nav bar */
+
+a {
+    text-decoration: none;
+}
+
+.fotoNav {
+    width: 100px;
+    height: 100px;
+}
+
+.titlee {
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.body {
+    display: flex;
+     flex-direction: column;
+}
+
+
+/* layout con grid de todas las paginas*/
+body {
+    display: grid;
+    grid-template-areas: "nav" "body" "footer";
+}
+
+nav{
+    grid-area: nav;
+}
+
+.body {
+    grid-area: body;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+/* parte de index */ /* agregar grid gigante*/
+
+/*.mainHome { 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}*/
+
+.mainHome h1 { 
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mainHome h2 { 
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* parte de nosotros, agregar otra foto con texto*/
+
+#infoNos { 
+    display: flex; 
+     flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.infoNos {
+    display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content:space-between;
+}
+
+#foto1 { 
+    width: 500px;
+    height: 500px;
+} 
+
+.texto1 {
+    font-size: medium; 
+    width: 500px;
+    height: 350px; 
+    display: flex;
+     flex-direction: column; 
+     align-items: flex-start;
+     justify-content: space-evenly;
+}
+
+ 
+/*parte de menu*/
+.menuDiv {
+    display: flex; 
+     flex-direction: row; 
+     justify-content:flex-start;
+     align-items: center;
+    margin-bottom: 50px;  
+}
+
+.pizzaName{ 
+    display: flex;
+     flex-direction: column;
+     justify-content: flex-start; 
+}
+
+
+/* parte de informacion extra*/
+
+.divMasa {
+    margin-bottom: 100px;
+}
+.sectIdeas {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+}
+
+
+
+
+/*.divMasa img {
+    width: 500px;
+    height: 500px;
+}
+
+.divMasa {
+    display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+}*/
+
+.masaFlex {
+    display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+
+}
+.masaFlex ol {
+    display: flex;
+    flex-direction: column;
+     justify-content: space-evenly;
+}
+.masaFlex ul {
+    display: flex;
+    flex-direction: column;
+     justify-content: space-evenly;
+}
+
+/* grid example*/
+
+.divIdeas {
+    /*width: 500px;
+    height: 500px;*/
+    display: grid;
+    grid-template-areas: "verdes papas papas" "verdes anana anana"
+    "tomates tomates bocaccino";
+}
+#foto-anana {
+    grid-area: anana;
+    width: 333px;
+    height: 166px;
+}
+#foto-bocaccino {
+    grid-area: bocaccino;
+    width: 166px;
+    height: 166px;
+}
+#foto-hojasv {
+    grid-area: verdes;
+    width: 166px;
+    height: 333px;
+}
+#foto-papasyhuevo{
+    width: 333px;
+    height: 166px;
+    grid-area: papas;
+}
+#foto-tomates{
+    grid-area: tomates;
+    width: 333px;
+    height: 166px;
+}
+
+/*.sectIdeas{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}*/
+
+   
+
+/*.sectIdeas div{
+    width: 500px;
+    height: 500px;
+}*/
+
+/* parte de contacto*/
+
+.contactUbi {
+    display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+}
+#ubih {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.logoPlusInfo img { 
+    width: 50px;
+    height: 50px;
+}
+
+.logoPlusInfo { 
+    margin: 50px;
+    display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: baseline;
+}
+
+.logoPlusInfo h2 {
+    margin-left: 50px;
+}
+
+.mainInfo h3 {
+    margin: 50px;
+}
+
+
+/*footer para ir a home*/
+
+footer { 
+    margin: 50px;
+    padding-top: 50px;
+    border-top: solid 5px  white;
+} 
+
+
+
+
+
+@media screen and (max-width: 768px) {
+   
+    /*menu*/
+    .pizzaName {
+        margin-top: 50px;
+    }
+
+   .masaFlex{
+    margin-top: 50px;
+   }
+
+   .masaFlex ol {
+    margin-top: 25px;
+   }
+   .masaFlex ul {
+    margin-top: 25px;
+   }
+}
+
+
+/* media queries para tablet
+@media screen and (max-width: 1150px) {
+
+    .titlee {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+    
+    h2 {
+        font-size: 16.8px;
+    }
+
+    h3 {
+        font-size: 13.1px;
+    }
+
+    li {
+        font-size: 11.2px;
+    }
+}
+
+    /* parte de informacion extra tablet size*/
+
+   /* .divMasa img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .masaFlex {
+        width: 350px;
+        height: 350px;
+    }
+
+    .masaFlex ol {
+        height: 210px;
+    }
+
+    /* grid example de extra info tablet size*/
+
+   /* .divIdeas {
+        width: 350px;
+        height: 350px;
+    }
+
+    #foto-anana {
+        width: 233px;
+        height: 116px;
+    }
+
+    #foto-bocaccino {
+        width: 116px;
+        height: 116px;
+
+    }
+
+    #foto-hojasv {
+        width: 116px;
+        height: 233px;
+    }
+
+    #foto-papasyhuevo{
+        width: 233px;
+        height: 116px;
+       
+    }
+
+    #foto-tomates{
+        width: 233px;
+        height: 116px;
+    }
+
+    .sectIdeas {
+     margin-top: 35px;
+    }
+
+    .sectIdeas div{
+        width: 350px;
+        height: 350px;
+    }
+
+    footer { 
+        margin: 35px;
+        padding-top: 35px;
+    } 
+}
+
+
+
+/* media queries para la parte de extra info size pequeños*/
+
+/*@media screen and (max-width: 840px) {
+
+    .divMasa {
+         flex-direction: column;
+         align-items: flex-start;
+      
+    }
+    
+    .sectIdeas {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    
+}
+
+
+
+
+    
