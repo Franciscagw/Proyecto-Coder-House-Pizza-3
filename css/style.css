@@ -46,6 +46,10 @@ a {
     margin-top: 50px;
 }
 
+body {
+    padding: 0px;
+}
+
 .body {
     display: flex;
      flex-direction: column;
@@ -61,11 +65,9 @@ body {
 nav{
     grid-area: nav;
 }
-
 .body {
     grid-area: body;
 }
-
 footer{
     grid-area: footer;
 }
@@ -90,33 +92,14 @@ footer{
 
 /* parte de nosotros, agregar otra foto con texto*/
 
-#infoNos { 
-    display: flex; 
-     flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.infoNos {
-    display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content:space-between;
-}
-
-#foto1 { 
-    width: 500px;
-    height: 500px;
-} 
-
 .texto1 {
-    font-size: medium; 
-    width: 500px;
-    height: 350px; 
+    margin-left: 50px;
     display: flex;
      flex-direction: column; 
-     align-items: flex-start;
-     justify-content: space-evenly;
+     justify-content: center;
+}
+.texto1 h2 { 
+    margin-bottom: 50px;
 }
 
  
@@ -200,7 +183,6 @@ footer{
 
 
 /* parte de contacto*/
-
 .contactUbi {
     display: flex;
      flex-direction: row;
@@ -245,6 +227,7 @@ footer {
 
 
 @media screen and (max-width:1100px) {
+   
     .divIdeas {
         width: 350px;
         height: 350px;
@@ -303,6 +286,13 @@ footer {
    .masaFlex ul {
     margin-top: 25px;
    }
+
+   /*Nosotros*/
+   .texto1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+   }
+
 }
 
 
