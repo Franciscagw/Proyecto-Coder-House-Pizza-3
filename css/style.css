@@ -4,6 +4,7 @@ body {
     background-image: url( ../fotos/foto-fondo.jpg);
     color: white; 
     font-family: 'Bodoni Moda', serif;
+    text-align: justify;
 }
 
 nav {
@@ -90,19 +91,27 @@ footer{
 }
 
 
-/* parte de nosotros, agregar otra foto con texto*/
+/* parte de nosotros*/
 
 .texto1 {
-    margin-left: 50px;
     display: flex;
      flex-direction: column; 
      justify-content: center;
 }
 .texto1 h2 { 
+    margin-bottom: 100px;
+}
+ 
+.infoNos {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+} 
+.InfoNos{
     margin-bottom: 50px;
 }
 
- 
+
 /*parte de menu*/
 .menuDiv {
     display: flex; 
