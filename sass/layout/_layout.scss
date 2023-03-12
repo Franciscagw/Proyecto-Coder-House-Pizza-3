@@ -1,0 +1,53 @@
+/* layout con grid de todas las paginas*/
+body {
+    display: grid;
+    grid-template-areas: "nav" "body" "footer";
+    nav{
+        grid-area: nav;
+        nav {
+            font-size: 20px; 
+            display: inline-block; 
+            background-color: black; position: sticky;
+            width: 100%;
+        
+            .navBar {
+                display: flex; 
+                align-content: stretch; 
+                flex-direction: row; 
+                flex-wrap: wrap; 
+                justify-content: space-evenly; 
+                align-items: center;
+                li {
+                    list-style-type: none;
+                    text-decoration: none;
+                    a {
+                        text-decoration: none;
+                    }
+                    .fotoNav {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                
+            }
+        } /* cambiar el color de los links de la nav bar */
+
+    }
+    .body {
+        grid-area: body;
+        display: flex;
+        flex-direction: column;
+        .titlee {
+            font-size: 50px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+    }
+    footer{
+        grid-area: footer;
+        margin: 50px;
+        padding-top: 50px;
+        border-top: solid 5px  white;
+    }
+    
+}

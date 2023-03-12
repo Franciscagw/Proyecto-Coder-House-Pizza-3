@@ -1,308 +1,287 @@
-* {margin: 0 ;padding: 0;}
-
-body { 
-    background-image: url( ../fotos/foto-fondo.jpg);
-    color: white; 
-    font-family: 'Bodoni Moda', serif;
-    text-align: justify;
-}
-
-nav {
-    font-size: 20px; 
-    display: inline-block; 
-    background-color: black; position: sticky;
-    width: 100%;
-}
-
-ul{ padding: 0px;}
-
-
-.navBar {
-    display: flex; 
-     align-content: stretch; 
-     flex-direction: row; 
-     flex-wrap: wrap; 
-     justify-content: space-evenly; 
-     align-items: center;
-}
-
-nav ul li { 
-    list-style-type: none;
-    text-decoration: none;
-
-} /* cambiar el color de los links de la nav bar */
-
-a {
-    text-decoration: none;
-}
-
-.fotoNav {
-    width: 100px;
-    height: 100px;
-}
-
-.titlee {
-    font-size: 50px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+/*base*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    padding: 0px;
+  background-image: url(../fotos/foto-fondo.jpg);
+  color: white;
+  font-family: "Bodoni Moda", serif;
+  text-align: justify;
 }
 
-.body {
-    display: flex;
-     flex-direction: column;
-}
-
-
+/*layout*/
 /* layout con grid de todas las paginas*/
 body {
-    display: grid;
-    grid-template-areas: "nav" "body" "footer";
+  display: grid;
+  grid-template-areas: "nav" "body" "footer";
+}
+body nav {
+  grid-area: nav;
+  /* cambiar el color de los links de la nav bar */
+}
+body nav nav {
+  font-size: 20px;
+  display: inline-block;
+  background-color: black;
+  position: sticky;
+  width: 100%;
+}
+body nav nav .navBar {
+  display: flex;
+  align-content: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body nav nav .navBar li {
+  list-style-type: none;
+  text-decoration: none;
+}
+body nav nav .navBar li a {
+  text-decoration: none;
+}
+body nav nav .navBar li .fotoNav {
+  width: 100px;
+  height: 100px;
+}
+body .body {
+  grid-area: body;
+  display: flex;
+  flex-direction: column;
+}
+body .body .titlee {
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+body footer {
+  grid-area: footer;
+  margin: 50px;
+  padding-top: 50px;
+  border-top: solid 5px white;
 }
 
-nav{
-    grid-area: nav;
-}
-.body {
-    grid-area: body;
-}
-footer{
-    grid-area: footer;
-}
-
-
+/*pages*/
 /* parte de index */ /* agregar grid gigante*/
-
-.mainHome h1 { 
-    font-size: 100px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.mainHome h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-.mainHome h2 { 
-    font-size: 50px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.mainHome h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-
-/* parte de nosotros*/
-
-.texto1 {
-    display: flex;
-     flex-direction: column; 
-     justify-content: center;
-}
-.texto1 h2 { 
-    margin-bottom: 100px;
-}
- 
-.infoNos {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 50px;
-} 
-.InfoNos{
-    margin-bottom: 50px;
-}
-
 
 /*parte de menu*/
 .menuDiv {
-    display: flex; 
-     flex-direction: row; 
-     justify-content:flex-start;
-     align-items: center;
-    margin-bottom: 50px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-.pizzaName{ 
-    display: flex;
-     flex-direction: column;
-     justify-content: flex-start; 
+.pizzaName {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-
-
-/* parte de informacion extra*/
-
-.divMasa {
-    margin-bottom: 100px;
-}
-.sectIdeas {
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-top: 50px;
-}
-
-.masaFlex {
-    display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
-
-}
-.masaFlex ol {
-    display: flex;
-    flex-direction: column;
-     justify-content: space-evenly;
-}
-.masaFlex ul {
-    display: flex;
-    flex-direction: column;
-     justify-content: space-evenly;
-}
-
-/* grid example*/
-
-.divIdeas {
-    display: grid;
-    grid-template-areas: "verdes papas papas" "verdes anana anana"
-    "tomates tomates bocaccino";
-}
-#foto-anana {
-    grid-area: anana;
-    width: 333px;
-    height: 166px;
-}
-#foto-bocaccino {
-    grid-area: bocaccino;
-    width: 166px;
-    height: 166px;
-}
-#foto-hojasv {
-    grid-area: verdes;
-    width: 166px;
-    height: 333px;
-}
-#foto-papasyhuevo{
-    width: 333px;
-    height: 166px;
-    grid-area: papas;
-}
-#foto-tomates{
-    grid-area: tomates;
-    width: 333px;
-    height: 166px;
-}
-
 
 /* parte de contacto*/
 .contactUbi {
-    display: flex;
-     flex-direction: row;
-     justify-content: flex-start;
-     align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
+
 #ubih {
-    width: 500px;
-    margin-left: 50px;
+  width: 500px;
+  margin-left: 50px;
 }
 
-.logoPlusInfo img { 
-    width: 50px;
-    height: 50px;
+.logoPlusInfo img {
+  width: 50px;
+  height: 50px;
 }
 
-.logoPlusInfo { 
-    margin: 50px;
-    display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: baseline;
+.logoPlusInfo {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
 }
 
 .logoPlusInfo h2 {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .mainInfo h3 {
-    margin: 50px;
+  margin: 50px;
 }
 
-
-/*footer para ir a home*/
-
-footer { 
-    margin: 50px;
-    padding-top: 50px;
-    border-top: solid 5px  white;
-} 
-
-
-
-@media screen and (max-width:1100px) {
-   
-    .divIdeas {
-        width: 350px;
-        height: 350px;
-    }
-
-    .gridIdeas {
-        display: flex;
-         justify-content: center;
-    }
-    #foto-anana {
-        width: 233px;
-        height: 116px;
-    }
-    #foto-bocaccino {
-        width: 116px;
-        height: 116px;
-    }
-    #foto-hojasv {
-        width: 116px;
-        height: 233px;
-    }
-    #foto-papasyhuevo{
-        width: 233px;
-        height: 116px;
-    }
-    #foto-tomates{
-        width: 233px;
-        height: 116px;
-    }
-    
-
+/* parte de informacion extra*/
+.divMasa {
+  margin-bottom: 100px;
 }
 
-@media screen and (max-width: 768px) {
-   /*Nav bar*/
-   nav {
-    font-size: 10px; 
-   }
-   .fotoNav {
-    width: 50px;
-    height: 50px;
+.sectIdeas {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 50px;
 }
 
-    /*menu*/
-    .pizzaName {
-        margin-top: 50px;
-    }
-
-   .masaFlex{
-    margin-top: 50px;
-   }
-
-   .masaFlex ol {
-    margin-top: 25px;
-   }
-   .masaFlex ul {
-    margin-top: 25px;
-   }
-
-   /*Nosotros*/
-   .texto1 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-   }
-
+.masaFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
+.masaFlex ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
-    
+.masaFlex ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* grid example*/
+.divIdeas {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-areas: "verdes papas papas" "verdes anana anana" "tomates tomates bocaccino";
+}
+
+#foto-anana {
+  grid-area: anana;
+  width: 333px;
+  height: 166px;
+}
+
+#foto-bocaccino {
+  grid-area: bocaccino;
+  width: 166px;
+  height: 166px;
+}
+
+#foto-hojasv {
+  grid-area: verdes;
+  width: 166px;
+  height: 333px;
+}
+
+#foto-papasyhuevo {
+  width: 333px;
+  height: 166px;
+  grid-area: papas;
+}
+
+#foto-tomates {
+  grid-area: tomates;
+  width: 333px;
+  height: 166px;
+}
+
+/* parte de nosotros*/
+.body .infoNos {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+}
+.body .infoNos .texto1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body .infoNos .texto1 h2 {
+  margin-bottom: 100px;
+}
+.body .InfoNos {
+  margin-bottom: 50px;
+}
+.body .InfoNos .texto1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body .InfoNos .texto1 h2 {
+  margin-bottom: 100px;
+}
+
+/*medias queries*/
+@media screen and (max-width: 1100px) {
+  .divIdeas {
+    width: 350px;
+    height: 350px;
+  }
+  .gridIdeas {
+    display: flex;
+    justify-content: center;
+  }
+  #foto-anana {
+    width: 233px;
+    height: 116px;
+  }
+  #foto-bocaccino {
+    width: 116px;
+    height: 116px;
+  }
+  #foto-hojasv {
+    width: 116px;
+    height: 233px;
+  }
+  #foto-papasyhuevo {
+    width: 233px;
+    height: 116px;
+  }
+  #foto-tomates {
+    width: 233px;
+    height: 116px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .divIdeas {
+    width: 350px;
+    height: 350px;
+  }
+  .gridIdeas {
+    display: flex;
+    justify-content: center;
+  }
+  #foto-anana {
+    width: 233px;
+    height: 116px;
+  }
+  #foto-bocaccino {
+    width: 116px;
+    height: 116px;
+  }
+  #foto-hojasv {
+    width: 116px;
+    height: 233px;
+  }
+  #foto-papasyhuevo {
+    width: 233px;
+    height: 116px;
+  }
+  #foto-tomates {
+    width: 233px;
+    height: 116px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

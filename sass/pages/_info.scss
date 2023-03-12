@@ -1,0 +1,64 @@
+/* parte de informacion extra*/
+
+.divMasa {
+    margin-bottom: 100px;
+}
+.sectIdeas {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+}
+
+.masaFlex {
+    display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+
+}
+.masaFlex ol {
+    display: flex;
+    flex-direction: column;
+     justify-content: space-evenly;
+}
+.masaFlex ul {
+    display: flex;
+    flex-direction: column;
+     justify-content: space-evenly;
+}
+
+/* grid example*/
+
+.divIdeas {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-areas: "verdes papas papas" "verdes anana anana"
+    "tomates tomates bocaccino";
+}
+#foto-anana {
+    grid-area: anana;
+    width: 333px;
+    height: 166px;
+}
+#foto-bocaccino {
+    grid-area: bocaccino;
+    width: 166px;
+    height: 166px;
+}
+#foto-hojasv {
+    grid-area: verdes;
+    width: 166px;
+    height: 333px;
+}
+#foto-papasyhuevo{
+    width: 333px;
+    height: 166px;
+    grid-area: papas;
+}
+#foto-tomates{
+    grid-area: tomates;
+    width: 333px;
+    height: 166px;
+}
+

@@ -1,0 +1,32 @@
+/* parte de contacto*/
+.contactUbi {
+    display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+}
+#ubih {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.logoPlusInfo img { 
+    width: 50px;
+    height: 50px;
+}
+
+.logoPlusInfo { 
+    margin: 50px;
+    display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: baseline;
+}
+
+.logoPlusInfo h2 {
+    margin-left: 50px;
+}
+
+.mainInfo h3 {
+    margin: 50px;
+}
