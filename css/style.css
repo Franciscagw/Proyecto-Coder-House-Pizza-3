@@ -19,16 +19,14 @@ body {
 }
 body nav {
   grid-area: nav;
-  /* cambiar el color de los links de la nav bar */
-}
-body nav nav {
   font-size: 20px;
   display: inline-block;
   background-color: black;
   position: sticky;
   width: 100%;
+  /* cambiar el color de los links de la nav bar */
 }
-body nav nav .navBar {
+body nav ul {
   display: flex;
   align-content: stretch;
   flex-direction: row;
@@ -36,14 +34,14 @@ body nav nav .navBar {
   justify-content: space-evenly;
   align-items: center;
 }
-body nav nav .navBar li {
+body nav ul li {
   list-style-type: none;
   text-decoration: none;
 }
-body nav nav .navBar li a {
+body nav ul li a {
   text-decoration: none;
 }
-body nav nav .navBar li .fotoNav {
+body nav ul li .fotoNav {
   width: 100px;
   height: 100px;
 }
@@ -61,7 +59,6 @@ body footer {
   grid-area: footer;
   margin: 50px;
   padding-top: 50px;
-  border-top: solid 5px white;
 }
 
 /*pages*/
