@@ -1,13 +1,158 @@
+/*base*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 49 \2502          grid-area: footer;\a    \2502                   ^\a    \2575 \a   sass/layout/_layout.scss 49:18  @import\a   sass/style.scss 5:9             root stylesheet';
+body {
+  background-image: url(../fotos/foto-fondo.jpg);
+  color: white;
+  font-family: "Bodoni Moda", serif;
+  text-align: justify;
+}
+
+/*layout*/
+/* layout con grid de todas las paginas*/
+body {
+  display: grid;
+  grid-template-areas: "nav" "body" "footer";
+}
+body nav {
+  grid-area: nav;
+  font-size: 20px;
+  display: inline-block;
+  background-color: black;
+  position: sticky;
+  width: 100%;
+  /* cambiar el color de los links de la nav bar */
+}
+body nav ul {
+  display: flex;
+  align-content: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body nav ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+body nav ul li a {
+  text-decoration: none;
+}
+body nav ul li .fotoNav {
+  width: 100px;
+  height: 100px;
+}
+body .body {
+  grid-area: body;
+  display: flex;
+  flex-direction: column;
+}
+body .body .titlee {
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+body footer {
+  grid-area: footer;
+  margin: 50px;
+  padding-top: 50px;
+  border-top: solid 1px grey;
+}
+
+/*pages*/
+/* parte de index */ /* agregar grid gigante*/
+.mainHome h1 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.mainHome h2 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*parte de menu*/
+.menuDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 50px;
+  /*background-color: grey;
+  border-radius: 20px;
+  box-shadow: 1px;
+  margin: 15px;
+  height: 700px;
+
+
+  display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;*/
+}
+
+.contDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pizzaName {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* parte de contacto*/
+.contactUbi {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#ubih {
+  width: 500px;
+  margin-left: 50px;
+}
+
+.logoPlusInfo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logoPlusInfo {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.logoPlusInfo h2 {
+  margin-left: 50px;
+}
+
+.mainInfo h3 {
+  margin: 50px;
+}
+
+/* parte de informacion extra*/
+.divMasa {
+  margin-bottom: 100px;
+}
+
+.sectIdeas {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 50px;
 }
 
 .masaFlex {

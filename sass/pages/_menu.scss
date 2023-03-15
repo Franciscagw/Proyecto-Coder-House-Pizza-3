@@ -5,6 +5,25 @@
      justify-content:flex-start;
      align-items: center;
     margin-bottom: 50px;  
+
+     /*background-color: grey;
+    border-radius: 20px;
+    box-shadow: 1px;
+    margin: 15px;
+    height: 700px;
+
+
+    display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;*/
+
+
+}
+.contDiv {
+    display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
 }
 
 .pizzaName{ 
