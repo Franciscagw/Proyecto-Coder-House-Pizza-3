@@ -1,14 +1,16 @@
 /* layout con grid de todas las paginas*/
 body {
     display: grid;
-    grid-template-areas: "nav" "body" "footer";
+    grid-template-areas: "navb" "body" "footer";
     nav{
-        grid-area: nav;
+
+        grid-area: navb;
         font-size: 20px; 
         display: inline-block; 
         background-color: black; position: sticky;
         width: 100%;
         ul{
+            padding: 0px;
             display: flex; 
             align-content: stretch; 
             flex-direction: row; 
@@ -20,12 +22,13 @@ body {
                 text-decoration: none;
                 a {
                     text-decoration: none;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
-                .fotoNav {
-                    width: 100px;
-                    height: 100px;
                 }
-            }
+               
                 
             
         } /* cambiar el color de los links de la nav bar */

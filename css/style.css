@@ -15,10 +15,10 @@ body {
 /* layout con grid de todas las paginas*/
 body {
   display: grid;
-  grid-template-areas: "nav" "body" "footer";
+  grid-template-areas: "navb" "body" "footer";
 }
 body nav {
-  grid-area: nav;
+  grid-area: navb;
   font-size: 20px;
   display: inline-block;
   background-color: black;
@@ -27,6 +27,7 @@ body nav {
   /* cambiar el color de los links de la nav bar */
 }
 body nav ul {
+  padding: 0px;
   display: flex;
   align-content: stretch;
   flex-direction: row;
@@ -41,7 +42,7 @@ body nav ul li {
 body nav ul li a {
   text-decoration: none;
 }
-body nav ul li .fotoNav {
+body nav ul li a img {
   width: 100px;
   height: 100px;
 }
@@ -270,12 +271,12 @@ body footer {
 }
 @media screen and (max-width: 768px) {
   /*Nav bar*/
-  nav {
+  nav ul {
     font-size: 10px;
   }
-  .fotoNav {
-    width: 50px;
+  nav ul li a img {
     height: 50px;
+    width: 50px;
   }
   .titlee {
     font-size: 27px;
