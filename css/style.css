@@ -1,10 +1,3 @@
-/* Error: expected ";".
- *    ,
- * 49 |         grid-area: footer;
- *    |                  ^
- *    '
- *   sass/layout/_layout.scss 49:18  @import
- *   sass/style.scss 5:9             root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -16,3 +9,149 @@ body::before {
   border-bottom: 2px solid black;
   content: 'Error: expected ";".\a    \2577 \a 49 \2502          grid-area: footer;\a    \2502                   ^\a    \2575 \a   sass/layout/_layout.scss 49:18  @import\a   sass/style.scss 5:9             root stylesheet';
 }
+
+.masaFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.masaFlex ol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.masaFlex ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* grid example*/
+.divIdeas {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-areas: "verdes papas papas" "verdes anana anana" "tomates tomates bocaccino";
+}
+
+#foto-anana {
+  grid-area: anana;
+  width: 333px;
+  height: 166px;
+}
+
+#foto-bocaccino {
+  grid-area: bocaccino;
+  width: 166px;
+  height: 166px;
+}
+
+#foto-hojasv {
+  grid-area: verdes;
+  width: 166px;
+  height: 333px;
+}
+
+#foto-papasyhuevo {
+  width: 333px;
+  height: 166px;
+  grid-area: papas;
+}
+
+#foto-tomates {
+  grid-area: tomates;
+  width: 333px;
+  height: 166px;
+}
+
+/* parte de nosotros*/
+.body .infoNos {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+}
+.body .infoNos .texto1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body .infoNos .texto1 h2 {
+  margin-bottom: 100px;
+}
+.body .InfoNos {
+  margin-bottom: 50px;
+}
+.body .InfoNos .texto1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.body .InfoNos .texto1 h2 {
+  margin-bottom: 100px;
+}
+
+/*medias queries*/
+@media screen and (max-width: 1100px) {
+  .divIdeas {
+    width: 350px;
+    height: 350px;
+  }
+  .gridIdeas {
+    display: flex;
+    justify-content: center;
+  }
+  #foto-anana {
+    width: 233px;
+    height: 116px;
+  }
+  #foto-bocaccino {
+    width: 116px;
+    height: 116px;
+  }
+  #foto-hojasv {
+    width: 116px;
+    height: 233px;
+  }
+  #foto-papasyhuevo {
+    width: 233px;
+    height: 116px;
+  }
+  #foto-tomates {
+    width: 233px;
+    height: 116px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .divIdeas {
+    width: 350px;
+    height: 350px;
+  }
+  .gridIdeas {
+    display: flex;
+    justify-content: center;
+  }
+  #foto-anana {
+    width: 233px;
+    height: 116px;
+  }
+  #foto-bocaccino {
+    width: 116px;
+    height: 116px;
+  }
+  #foto-hojasv {
+    width: 116px;
+    height: 233px;
+  }
+  #foto-papasyhuevo {
+    width: 233px;
+    height: 116px;
+  }
+  #foto-tomates {
+    width: 233px;
+    height: 116px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
