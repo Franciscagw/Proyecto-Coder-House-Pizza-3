@@ -79,29 +79,37 @@ body footer {
 }
 
 /*parte de menu*/
-.menuDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+.bodymenu {
   align-items: center;
-  margin-bottom: 50px;
-  /*background-color: grey;
-  border-radius: 20px;
-  box-shadow: 1px;
-  margin: 15px;
-  height: 700px;
-
-
-  display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;*/
 }
-
-.contDiv {
+.bodymenu .contDiv {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+.bodymenu .contDiv .menuDiv {
+  width: 400px;
+  border: solid 2px white;
+  border-radius: 20px;
+  display: flex;
+  margin: 30px;
+}
+.bodymenu .contDiv .menuDiv img {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+.bodymenu .contDiv .menuDiv .pizzaName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.bodymenu .contDiv .menuDiv .pizzaName h2 {
+  font-size: 22px;
+}
+.bodymenu .contDiv .menuDiv .pizzaName h3 {
+  font-size: 17px;
 }
 
 .pizzaName {
@@ -239,7 +247,25 @@ body footer {
 }
 
 /*medias queries*/
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
+  /*menu*/
+  .bodymenu .contDiv .menuDiv {
+    width: 300px;
+    margin: 15px;
+  }
+  .bodymenu .contDiv .menuDiv img {
+    height: 150px;
+    width: 150px;
+  }
+  .bodymenu .contDiv .menuDiv .pizzaName {
+    margin: 5px;
+  }
+  .bodymenu .contDiv .menuDiv .pizzaName h2 {
+    font-size: 20px;
+  }
+  .bodymenu .contDiv .menuDiv .pizzaName h3 {
+    font-size: 15px;
+  }
   .divIdeas {
     width: 350px;
     height: 350px;
@@ -271,33 +297,66 @@ body footer {
 }
 @media screen and (max-width: 768px) {
   /*Nav bar*/
-  nav ul {
+  body nav {
     font-size: 10px;
   }
-  nav ul li a img {
-    height: 50px;
+  body nav ul li a img {
     width: 50px;
+    height: 50px;
   }
-  .titlee {
-    font-size: 27px;
+  body .body .titlee {
+    font-size: 25px;
+    margin: 25px;
   }
   /*menu*/
-  .pizzaName {
-    margin-top: 50px;
+  .bodymenu .contDiv {
+    flex-direction: column;
   }
-  .masaFlex {
-    margin-top: 50px;
+  .bodymenu .contDiv .menuDiv {
+    width: 400px;
+    margin: 20px;
   }
-  .masaFlex ol {
-    margin-top: 25px;
+  .bodymenu .contDiv .menuDiv img {
+    height: 200px;
+    width: 200px;
   }
-  .masaFlex ul {
-    margin-top: 25px;
+  .bodymenu .contDiv .menuDiv .pizzaName {
+    margin: 15px;
+  }
+  .bodymenu .contDiv .menuDiv .pizzaName h2 {
+    font-size: 22px;
+  }
+  .bodymenu .contDiv .menuDiv .pizzaName h3 {
+    font-size: 17px;
   }
   /*Nosotros*/
   .texto1 {
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+  /*menu*/
+}
+@media (max-width: 480px) {
+  /*menu*/
+  .bodymenu .contDiv {
+    flex-direction: column;
+  }
+  .bodymenu .contDiv .menuDiv {
+    width: 300px;
+    margin: 15px;
+  }
+  .bodymenu .contDiv .menuDiv img {
+    height: 150px;
+    width: 150px;
+  }
+  .bodymenu .contDiv .menuDiv .pizzaName {
+    margin: 10px;
+  }
+  .bodymenu .contDiv .menuDiv .pizzaName h2 {
+    font-size: 15px;
+  }
+  .bodymenu .contDiv .menuDiv .pizzaName h3 {
+    font-size: 10px;
   }
 }
 
