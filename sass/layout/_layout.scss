@@ -42,17 +42,9 @@ body {
         }
     }
     footer{
-        $border-thin: solid 2px white;
-        $border-thick : solid 1px white;
-
         grid-area: footer;
         margin: 50px;
         padding-top: 50px;
-
-
-        @if (min-width==780px) 
-        {border-top: solid 2px white }
-        @else if (max-width==780px){border-top: double 1px white} 
-    
+        border-top: solid 1px grey;
     }
 }
