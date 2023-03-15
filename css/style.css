@@ -268,34 +268,35 @@ body footer {
     height: 116px;
   }
 }
-@media screen and (max-width: 1100px) {
-  .divIdeas {
-    width: 350px;
-    height: 350px;
+@media screen and (max-width: 768px) {
+  /*Nav bar*/
+  nav {
+    font-size: 10px;
   }
-  .gridIdeas {
-    display: flex;
-    justify-content: center;
+  .fotoNav {
+    width: 50px;
+    height: 50px;
   }
-  #foto-anana {
-    width: 233px;
-    height: 116px;
+  .titlee {
+    font-size: 27px;
   }
-  #foto-bocaccino {
-    width: 116px;
-    height: 116px;
+  /*menu*/
+  .pizzaName {
+    margin-top: 50px;
   }
-  #foto-hojasv {
-    width: 116px;
-    height: 233px;
+  .masaFlex {
+    margin-top: 50px;
   }
-  #foto-papasyhuevo {
-    width: 233px;
-    height: 116px;
+  .masaFlex ol {
+    margin-top: 25px;
   }
-  #foto-tomates {
-    width: 233px;
-    height: 116px;
+  .masaFlex ul {
+    margin-top: 25px;
+  }
+  /*Nosotros*/
+  .texto1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
