@@ -30,3 +30,19 @@
 .mainInfo h3 {
     margin: 50px;
 }
+
+form {
+    fieldset{
+        border: solid 1.5px white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        label{
+            font-size: 25px;
+        }
+        input {
+            width: 500px;
+        }
+    }
+
+}

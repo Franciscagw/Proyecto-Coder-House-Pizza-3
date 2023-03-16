@@ -1,8 +1,5 @@
 @media screen and (max-width: 768px) {
     /*Nav bar*/
-
-  
-   
    body {
     nav{
         font-size: 10px; 
@@ -20,10 +17,12 @@
     .body {
         .titlee {
             font-size: 25px;
-            margin:25px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
    }
+
 
    /*menu*/
     .bodymenu {
@@ -51,16 +50,28 @@
         }
     }
    
-
-    /*Nosotros*/
-    .texto1 {
-     margin-top: 50px;
-     margin-bottom: 50px;
+    /*nosotros*/
+    .infoNos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        img {
+            width: 400px;
+            height: 400px;   
+        }
+        .textoNos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+    
     }
- 
-
-    /*menu*/
-
     
         
 }

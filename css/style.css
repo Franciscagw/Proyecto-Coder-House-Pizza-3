@@ -8,7 +8,6 @@ body {
   background-image: url(../fotos/foto-fondo.jpg);
   color: white;
   font-family: "Bodoni Moda", serif;
-  text-align: justify;
 }
 
 /*layout*/
@@ -112,12 +111,6 @@ body footer {
   font-size: 17px;
 }
 
-.pizzaName {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 /* parte de contacto*/
 .contactUbi {
   display: flex;
@@ -150,6 +143,19 @@ body footer {
 
 .mainInfo h3 {
   margin: 50px;
+}
+
+form fieldset {
+  border: solid 1.5px white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+form fieldset label {
+  font-size: 25px;
+}
+form fieldset input {
+  width: 500px;
 }
 
 /* parte de informacion extra*/
@@ -221,29 +227,30 @@ body footer {
 }
 
 /* parte de nosotros*/
-.body .infoNos {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-bottom: 50px;
+.titlee {
+  text-align: center;
 }
-.body .infoNos .texto1 {
+
+.infoNos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.infoNos img {
+  width: 450px;
+  height: 450px;
+  border: solid 2px white;
+  border-radius: 20px;
+}
+.infoNos .textoNos {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.body .infoNos .texto1 h2 {
-  margin-bottom: 100px;
-}
-.body .InfoNos {
-  margin-bottom: 50px;
-}
-.body .InfoNos .texto1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.body .InfoNos .texto1 h2 {
-  margin-bottom: 100px;
+  align-items: center;
+  width: 450px;
+  margin-left: 20px;
 }
 
 /*medias queries*/
@@ -265,6 +272,20 @@ body footer {
   }
   .bodymenu .contDiv .menuDiv .pizzaName h3 {
     font-size: 15px;
+  }
+  /*nosotros*/
+  .infoNos img {
+    width: 310px;
+    height: 310px;
+  }
+  .infoNos .textoNos {
+    width: 310px;
+  }
+  .infoNos .textoNos h2 {
+    font-size: 25px;
+  }
+  .infoNos .textoNos h3 {
+    font-size: 18px;
   }
   .divIdeas {
     width: 350px;
@@ -306,7 +327,8 @@ body footer {
   }
   body .body .titlee {
     font-size: 25px;
-    margin: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   /*menu*/
   .bodymenu .contDiv {
@@ -329,12 +351,27 @@ body footer {
   .bodymenu .contDiv .menuDiv .pizzaName h3 {
     font-size: 17px;
   }
-  /*Nosotros*/
-  .texto1 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  /*nosotros*/
+  .infoNos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
   }
-  /*menu*/
+  .infoNos img {
+    width: 400px;
+    height: 400px;
+  }
+  .infoNos .textoNos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
 }
 @media (max-width: 480px) {
   /*menu*/
@@ -357,6 +394,20 @@ body footer {
   }
   .bodymenu .contDiv .menuDiv .pizzaName h3 {
     font-size: 10px;
+  }
+  /*nosotros*/
+  .infoNos {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .infoNos img {
+    width: 300px;
+    height: 300px;
+  }
+  .infoNos .textoNos {
+    width: 300px;
+    margin-left: 15pxpx;
+    margin-top: 15px;
   }
 }
 

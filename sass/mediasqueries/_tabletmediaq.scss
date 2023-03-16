@@ -1,7 +1,6 @@
 @media screen and (max-width:1024px) {
 
     /*menu*/
-   
     .bodymenu {
         .contDiv {
             .menuDiv{
@@ -24,6 +23,27 @@
 
             }
         }
+    }
+
+
+    /*nosotros*/
+    
+    .infoNos {
+        
+        img {
+            width: 310px;
+            height: 310px;
+        }
+        .textoNos {
+            width: 310px;
+            h2 {
+                font-size: 25px;
+            }
+            h3 {
+                font-size: 18px;
+            }   
+        }
+    
     }
    
             

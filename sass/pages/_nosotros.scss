@@ -1,28 +1,28 @@
 /* parte de nosotros*/
 
-.body {
-    .infoNos {
-        display: flex;
-        flex-direction: row-reverse;
-        margin-bottom: 50px;
-        .texto1 {
-            display: flex;
-             flex-direction: column; 
-             justify-content: center;
-            h2 {
-                margin-bottom: 100px;
-            }
-        }
-    } 
-    .InfoNos{
-        margin-bottom: 50px;
-        .texto1 {
-            display: flex;
-             flex-direction: column; 
-             justify-content: center;
-            h2 {
-                margin-bottom: 100px;
-            }
-        }  
+.titlee {
+    text-align: center;
+}
+.infoNos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    img {
+        width: 450px;
+        height: 450px;
+        border: solid 2px white;
+        border-radius: 20px;    
     }
+    .textoNos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        margin-left: 20px;
+    }
+
 }
