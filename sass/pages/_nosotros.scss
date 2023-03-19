@@ -3,11 +3,14 @@
 .titlee {
     text-align: center;
 }
-.infoNos {
+/*mixin*/
+@mixin flex ($direction){
     display: flex;
-    flex-direction: row;
+    flex-direction: $direction;
     justify-content: center;
-    
+}
+.infoNos {
+    @include flex (row);
     margin-bottom: 20px;
     margin-top: 20px;
     img {
@@ -24,5 +27,10 @@
         width: 450px;
         margin-left: 20px;
     }
-
+}
+.infoNos-rowReverse {
+    @extend .infoNos;
+    @include flex (row-reverse);
+    margin-bottom: 20px;
+    margin-top: 20px;  
 }

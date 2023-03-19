@@ -52,8 +52,7 @@
    
     /*nosotros*/
     .infoNos {
-        flex-direction: column;
-        justify-content: center;
+        @include flex (column);
         align-items: center;
         margin-bottom: 40px;
         margin-top: 40px;

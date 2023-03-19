@@ -29,7 +29,6 @@
     /*nosotros*/
     
     .infoNos {
-        
         img {
             width: 310px;
             height: 310px;
@@ -43,9 +42,22 @@
                 font-size: 18px;
             }   
         }
-    
     }
-   
+   .infoNos-rowReverse {
+    img {
+        width: 310px;
+        height: 310px;
+    }
+    .textoNos {
+        width: 310px;
+        h2 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 18px;
+        }   
+    }
+   }
 
     /* parte de informacion extra*/
     .divMasa {

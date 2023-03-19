@@ -255,26 +255,35 @@ body footer {
   text-align: center;
 }
 
-.infoNos {
+/*mixin*/
+.infoNos, .infoNos-rowReverse {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.infoNos img {
+.infoNos img, .infoNos-rowReverse img {
   width: 450px;
   height: 450px;
   border: solid 2px white;
   border-radius: 20px;
 }
-.infoNos .textoNos {
+.infoNos .textoNos, .infoNos-rowReverse .textoNos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 450px;
   margin-left: 20px;
+}
+
+.infoNos-rowReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /*medias queries*/
@@ -298,17 +307,30 @@ body footer {
     font-size: 15px;
   }
   /*nosotros*/
-  .infoNos img {
+  .infoNos img, .infoNos-rowReverse img {
     width: 310px;
     height: 310px;
   }
-  .infoNos .textoNos {
+  .infoNos .textoNos, .infoNos-rowReverse .textoNos {
     width: 310px;
   }
-  .infoNos .textoNos h2 {
+  .infoNos .textoNos h2, .infoNos-rowReverse .textoNos h2 {
     font-size: 25px;
   }
-  .infoNos .textoNos h3 {
+  .infoNos .textoNos h3, .infoNos-rowReverse .textoNos h3 {
+    font-size: 18px;
+  }
+  .infoNos-rowReverse img {
+    width: 310px;
+    height: 310px;
+  }
+  .infoNos-rowReverse .textoNos {
+    width: 310px;
+  }
+  .infoNos-rowReverse .textoNos h2 {
+    font-size: 25px;
+  }
+  .infoNos-rowReverse .textoNos h3 {
     font-size: 18px;
   }
   /* parte de informacion extra*/
@@ -415,18 +437,19 @@ body footer {
     font-size: 17px;
   }
   /*nosotros*/
-  .infoNos {
+  .infoNos, .infoNos-rowReverse {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
     margin-top: 40px;
   }
-  .infoNos img {
+  .infoNos img, .infoNos-rowReverse img {
     width: 400px;
     height: 400px;
   }
-  .infoNos .textoNos {
+  .infoNos .textoNos, .infoNos-rowReverse .textoNos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -489,15 +512,15 @@ body footer {
     font-size: 10px;
   }
   /*nosotros*/
-  .infoNos {
+  .infoNos, .infoNos-rowReverse {
     margin-bottom: 30px;
     margin-top: 30px;
   }
-  .infoNos img {
+  .infoNos img, .infoNos-rowReverse img {
     width: 300px;
     height: 300px;
   }
-  .infoNos .textoNos {
+  .infoNos .textoNos, .infoNos-rowReverse .textoNos {
     width: 300px;
     margin-left: 15pxpx;
     margin-top: 15px;
