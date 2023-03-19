@@ -46,6 +46,53 @@
     
     }
    
+
+    /* parte de informacion extra*/
+    .divMasa {
+        img {
+            height: 300px;
+            width: 300px;
+        }
+        .masaFlex {
+            width: 320px;
+            h2 {
+                font-size: 18px;
+            }
+
+            li {
+                font-size: 13px;
+            }
+        }
+        .divIdeas {
+            width: 300px;
+            height: 300px;
+            #foto-anana {
+                width: 200px;
+                height: 100px;
+            }
+            #foto-bocaccino {
+                width: 100px;
+                height: 100px;
+            }
+            #foto-hojasv {
+                grid-area: verdes;
+                width: 100px;
+                height: 200px;
+            }
+            #foto-papasyhuevo{
+                width: 200px;
+                height: 100px;
+            }
+            #foto-tomates{
+                width: 200px;
+                height: 100px;
+            }
+        }    
+    }
+}
+
+        
+
             
     
     
@@ -53,38 +100,3 @@
     
 
 
-
-
-
-    .divIdeas {
-        width: 350px;
-        height: 350px;
-    }
-
-    .gridIdeas {
-        display: flex;
-         justify-content: center;
-    }
-    #foto-anana {
-        width: 233px;
-        height: 116px;
-    }
-    #foto-bocaccino {
-        width: 116px;
-        height: 116px;
-    }
-    #foto-hojasv {
-        width: 116px;
-        height: 233px;
-    }
-    #foto-papasyhuevo{
-        width: 233px;
-        height: 116px;
-    }
-    #foto-tomates{
-        width: 233px;
-        height: 116px;
-    }
-    
-
-}

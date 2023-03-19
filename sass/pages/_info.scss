@@ -1,64 +1,64 @@
 /* parte de informacion extra*/
 
 .divMasa {
-    margin-bottom: 100px;
-}
-.sectIdeas {
-    margin-bottom: 50px;
     display: flex;
-    flex-direction: row-reverse;
-    margin-top: 50px;
-}
+    flex-direction: row;
+    justify-content: center;
 
-.masaFlex {
-    display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin-top: 20px;
 
-}
-.masaFlex ol {
-    display: flex;
-    flex-direction: column;
-     justify-content: space-evenly;
-}
-.masaFlex ul {
-    display: flex;
-    flex-direction: column;
-     justify-content: space-evenly;
-}
+    img {
+        height: 450px;
+        width: 450px;
+        border: solid 2px white;
+        border-radius: 20px;
+    }
+    .masaFlex {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        text-align: justify;
+    }
+    .divIdeas {
+        width: 450px;
+        height: 450px;
+        border: solid 2px white;
+        border-radius: 20px;
 
-/* grid example*/
+        margin-bottom: 20px;
+        margin-top: 20px;
 
-.divIdeas {
-    width: 500px;
-    height: 500px;
-    display: grid;
-    grid-template-areas: "verdes papas papas" "verdes anana anana"
-    "tomates tomates bocaccino";
+        display: grid;
+        grid-template-areas: "verdes papas papas" "verdes anana anana"
+        "tomates tomates bocaccino";
+        #foto-anana {
+            grid-area: anana;
+            width: 300px;
+            height: 150px;
+        }
+        #foto-bocaccino {
+            grid-area: bocaccino;
+            width: 150px;
+            height: 150px;
+        }
+        #foto-hojasv {
+            grid-area: verdes;
+            width: 150px;
+            height: 300px;
+        }
+        #foto-papasyhuevo{
+            width: 300px;
+            height: 150px;
+            grid-area: papas;
+        }
+        #foto-tomates{
+            grid-area: tomates;
+            width: 300px;
+            height: 150px;
+        }
+    }      
 }
-#foto-anana {
-    grid-area: anana;
-    width: 333px;
-    height: 166px;
-}
-#foto-bocaccino {
-    grid-area: bocaccino;
-    width: 166px;
-    height: 166px;
-}
-#foto-hojasv {
-    grid-area: verdes;
-    width: 166px;
-    height: 333px;
-}
-#foto-papasyhuevo{
-    width: 333px;
-    height: 166px;
-    grid-area: papas;
-}
-#foto-tomates{
-    grid-area: tomates;
-    width: 333px;
-    height: 166px;
-}
-
