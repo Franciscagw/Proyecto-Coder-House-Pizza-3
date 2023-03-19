@@ -112,50 +112,83 @@ body footer {
 }
 
 /* parte de contacto*/
-.contactUbi {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-#ubih {
-  width: 500px;
-  margin-left: 50px;
-}
-
-.logoPlusInfo img {
-  width: 50px;
-  height: 50px;
-}
-
-.logoPlusInfo {
-  margin: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: baseline;
-}
-
-.logoPlusInfo h2 {
-  margin-left: 50px;
-}
-
-.mainInfo h3 {
-  margin: 50px;
-}
-
-form fieldset {
-  border: solid 1.5px white;
-  border-radius: 10px;
+.mainInfo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-form fieldset label {
-  font-size: 25px;
+.mainInfo .contactUbi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
-form fieldset input {
-  width: 500px;
+.mainInfo .contactUbi iframe {
+  width: 450px;
+  height: 450px;
+  border: solid 2px white;
+  border-radius: 20px;
+}
+.mainInfo .contactUbi h2 {
+  width: 450px;
+  margin-left: 20px;
+}
+.mainInfo .logoPlusInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.mainInfo .logoPlusInfo img {
+  height: 50px;
+  width: 50px;
+}
+.mainInfo .logoPlusInfo h2 {
+  margin-left: 20px;
+}
+.mainInfo h3 {
+  width: 900px;
+  align-items: center;
+  display: inline;
+  font-size: 40px;
+  text-align: justify;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.mainInfo form {
+  border: solid 2px white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.mainInfo form legend {
+  width: auto;
+  font-size: 40px;
+  border-bottom: solid 2px white;
+}
+.mainInfo form ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+.mainInfo form ul li {
+  margin-bottom: 20px;
+}
+.mainInfo form ul li label {
+  font-size: 40px;
+}
+.mainInfo form ul li input {
+  height: 50px;
+  width: 400px;
 }
 
 /* parte de informacion extra*/
@@ -317,6 +350,34 @@ form fieldset input {
     width: 200px;
     height: 100px;
   }
+  /*contacto*/
+  .mainInfo .contactUbi iframe {
+    width: 300px;
+    height: 300px;
+  }
+  .mainInfo .contactUbi h2 {
+    width: 300px;
+    font-size: 25px;
+  }
+  .mainInfo h3 {
+    width: 600px;
+    font-size: 25px;
+  }
+  .mainInfo form {
+    width: 600px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .mainInfo form legend {
+    font-size: 35px;
+  }
+  .mainInfo form ul li label {
+    font-size: 30px;
+  }
+  .mainInfo form ul li input {
+    height: 40px;
+    width: 300px;
+  }
 }
 @media screen and (max-width: 768px) {
   /*Nav bar*/
@@ -374,51 +435,35 @@ form fieldset input {
     margin-left: 0px;
     margin-top: 15px;
   }
-  /* parte de informacion extra*/
-  .divMasa {
+  /*contacto*/
+  .mainInfo .contactUbi {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
     margin-bottom: 40px;
+    margin-top: 40px;
   }
-  .divMasa img {
-    height: 400px;
-    width: 400px;
-  }
-  .divMasa .masaFlex {
-    width: 400px;
-  }
-  .divMasa .masaFlex h2 {
-    font-size: 22px;
-  }
-  .divMasa .masaFlex li {
-    font-size: 17px;
-  }
-  .divMasa .divIdeas {
+  .mainInfo .contactUbi iframe {
     width: 400px;
     height: 400px;
   }
-  .divMasa .divIdeas #foto-anana {
-    width: 266px;
-    height: 133px;
+  .mainInfo .contactUbi h2 {
+    width: 400px;
   }
-  .divMasa .divIdeas #foto-bocaccino {
-    width: 133px;
-    height: 133px;
+  .mainInfo h3 {
+    width: 400px;
   }
-  .divMasa .divIdeas #foto-hojasv {
-    grid-area: verdes;
-    width: 133px;
-    height: 266px;
+  .mainInfo form {
+    width: 400px;
   }
-  .divMasa .divIdeas #foto-papasyhuevo {
-    width: 266px;
-    height: 133px;
+  .mainInfo form legend {
+    font-size: 25px;
   }
-  .divMasa .divIdeas #foto-tomates {
-    width: 266px;
-    height: 133px;
+  .mainInfo form ul li label {
+    font-size: 18px;
+  }
+  .mainInfo form ul li input {
+    height: 25px;
+    width: 220px;
   }
 }
 @media (max-width: 480px) {
@@ -498,6 +543,30 @@ form fieldset input {
   .divMasa .divIdeas #foto-tomates {
     width: 200px;
     height: 100px;
+  }
+  /*contacto*/
+  .mainInfo .contactUbi iframe {
+    width: 300px;
+    height: 300px;
+  }
+  .mainInfo .contactUbi h2 {
+    width: 300px;
+  }
+  .mainInfo h3 {
+    width: 300px;
+  }
+  .mainInfo form {
+    width: 300px;
+  }
+  .mainInfo form legend {
+    font-size: 20px;
+  }
+  .mainInfo form ul li label {
+    font-size: 16px;
+  }
+  .mainInfo form ul li input {
+    height: 20px;
+    width: 160px;
   }
 }
 
