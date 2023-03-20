@@ -17,17 +17,14 @@
                     }
                     h3 {    
                         font-size: 15px;
-                    }
-                        
+                    }            
                 }
-
             }
         }
     }
 
 
     /*nosotros*/
-    
     .infoNos {
         img {
             width: 310px;
@@ -59,6 +56,7 @@
     }
    }
 
+
     /* parte de informacion extra*/
     .divMasa {
         img {
@@ -70,11 +68,17 @@
             h2 {
                 font-size: 18px;
             }
-
-            li {
+            h3 {
                 font-size: 13px;
             }
         }
+      
+        iframe {
+            height: 300px;
+            width: 300px;
+        }
+    }
+    .divMasa-rowReverse {
         .divIdeas {
             width: 300px;
             height: 300px;
@@ -87,7 +91,6 @@
                 height: 100px;
             }
             #foto-hojasv {
-                grid-area: verdes;
                 width: 100px;
                 height: 200px;
             }
@@ -99,9 +102,19 @@
                 width: 200px;
                 height: 100px;
             }
-        }    
-    }
+        }   
+        .masaFlex {
+            width: 320px;
+            h2 {
+                font-size: 18px;
+            }
+            li {
+                font-size: 13px;
+            }
+        } 
 
+
+    }
 
 
     /*contacto*/
@@ -140,7 +153,4 @@
             }
         }
     }
-    
 }
-
-

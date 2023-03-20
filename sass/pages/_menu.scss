@@ -1,12 +1,10 @@
 /*parte de menu*/
-
 .bodymenu { 
     align-items: center;
     .contDiv {
         display: flex;
-         flex-direction: row;
-         justify-content: center;
-    
+        flex-direction: row;
+        justify-content: center;
         .menuDiv {
             width: 400px;
             border: solid 2px white;

@@ -1,13 +1,8 @@
 /* parte de informacion extra*/
-
 .divMasa {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
+   @include flex (row);
     margin-bottom: 20px;
     margin-top: 20px;
-
     img {
         height: 450px;
         width: 450px;
@@ -22,16 +17,30 @@
         align-items: center;
         margin-left: 20px;
         text-align: justify;
+        ol{   
+            padding: 0px;
+        }
+        ul {
+            padding: 0px;
+        }
     }
+    iframe {
+        height: 450px;
+        width: 450px;
+        border: solid 2px white;
+        border-radius: 20px;
+    }
+}
+.divMasa-rowReverse {
+    @extend .divMasa;
+    @include flex (row-reverse);
     .divIdeas {
         width: 450px;
         height: 450px;
         border: solid 2px white;
         border-radius: 20px;
-
         margin-bottom: 20px;
         margin-top: 20px;
-
         display: grid;
         grid-template-areas: "verdes papas papas" "verdes anana anana"
         "tomates tomates bocaccino";
@@ -60,5 +69,10 @@
             width: 300px;
             height: 150px;
         }
-    }      
+    }
+    .masaFlex {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
 }

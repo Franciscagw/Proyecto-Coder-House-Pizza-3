@@ -1,27 +1,28 @@
 @media screen and (max-width: 768px) {
+
     /*Nav bar*/
-   body {
-    nav{
-        font-size: 10px; 
-        ul{
-            li {
-                a {
-                    img {
-                        width: 50px;
-                        height: 50px;
+    body {
+        nav{
+            font-size: 10px; 
+            ul{
+                li {
+                    a {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
                     }
-                }
-            }  
+                }  
+            }
+        }
+        .body {
+            .titlee {
+                font-size: 30px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
         }
     }
-    .body {
-        .titlee {
-            font-size: 30px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-    }
-   }
 
 
    /*menu*/
@@ -42,14 +43,13 @@
                     }
                     h3 {    
                         font-size: 17px;
-                    }
-                        
+                    }         
                 }
-
             }
         }
     }
    
+
     /*nosotros*/
     .infoNos {
         @include flex (column);
@@ -69,10 +69,8 @@
             margin-left: 0px;
             margin-top: 15px;
         }
-    
     }
     
-
 
     /*contacto*/
     .mainInfo {
@@ -110,5 +108,71 @@
             }
         }
         
+    }
+
+
+    /*informacion*/
+    .divMasa {
+       @include flex (column);
+        margin-top: 40px;
+        margin-bottom: 40px;
+        img {
+            height: 400px;
+            width: 400px;
+        }
+        .masaFlex {
+            width: 400px;
+            margin-top: 40px;
+            margin-left: 0px;
+            h2 {
+                font-size: 25px;
+            }
+            h3 {
+                font-size: 20px;
+            } 
+        }
+        iframe {
+            height: 400px;
+            width: 400px;
+            margin-top: 20px;
+        }
+    }
+    .divMasa-rowReverse {
+        @include flex (column);
+        .divIdeas {
+            width: 400px;
+            height: 400px;
+            #foto-anana {
+                width: 266px;
+                height: 133px;
+            }
+            #foto-bocaccino {
+                width: 133px;
+                height: 133px;
+            }
+            #foto-hojasv{
+                width: 133px;
+                height: 266px;
+            }
+            #foto-papasyhuevo {
+                width: 266px;
+                height: 133px;
+            }
+            #foto-tomates {
+                width: 266px;
+                height: 133px;
+            }
+        }
+        .masaFlex {
+            width: 400px;
+            margin-top: 40px;
+            h2 {
+                font-size: 25px;
+            }
+            li {
+                font-size: 20px;
+            }
+            margin-right: 0px;
+        }
     }
 }

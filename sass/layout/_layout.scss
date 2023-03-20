@@ -28,20 +28,17 @@ body {
                 }
             }  
         } /* cambiar el color de los links de la nav bar */
-
     }
     .body {
         grid-area: body;
         display: flex;
         flex-direction: column;
-    
         .titlee {
             font-size: 50px;
             margin-bottom: 50px;
             margin-top: 50px;
         }
     }
-   
     footer{
         grid-area: footer;
         margin: 50px;

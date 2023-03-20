@@ -10,6 +10,8 @@ body {
   font-family: "Bodoni Moda", serif;
 }
 
+/*mixin*/
+/*mixin*/
 /*layout*/
 /* layout con grid de todas las paginas*/
 body {
@@ -192,20 +194,21 @@ body footer {
 }
 
 /* parte de informacion extra*/
-.divMasa {
+.divMasa, .divMasa-rowReverse {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.divMasa img {
+.divMasa img, .divMasa-rowReverse img {
   height: 450px;
   width: 450px;
   border: solid 2px white;
   border-radius: 20px;
 }
-.divMasa .masaFlex {
+.divMasa .masaFlex, .divMasa-rowReverse .masaFlex {
   width: 450px;
   display: flex;
   flex-direction: column;
@@ -214,7 +217,26 @@ body footer {
   margin-left: 20px;
   text-align: justify;
 }
-.divMasa .divIdeas {
+.divMasa .masaFlex ol, .divMasa-rowReverse .masaFlex ol {
+  padding: 0px;
+}
+.divMasa .masaFlex ul, .divMasa-rowReverse .masaFlex ul {
+  padding: 0px;
+}
+.divMasa iframe, .divMasa-rowReverse iframe {
+  height: 450px;
+  width: 450px;
+  border: solid 2px white;
+  border-radius: 20px;
+}
+
+.divMasa-rowReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.divMasa-rowReverse .divIdeas {
   width: 450px;
   height: 450px;
   border: solid 2px white;
@@ -224,30 +246,34 @@ body footer {
   display: grid;
   grid-template-areas: "verdes papas papas" "verdes anana anana" "tomates tomates bocaccino";
 }
-.divMasa .divIdeas #foto-anana {
+.divMasa-rowReverse .divIdeas #foto-anana {
   grid-area: anana;
   width: 300px;
   height: 150px;
 }
-.divMasa .divIdeas #foto-bocaccino {
+.divMasa-rowReverse .divIdeas #foto-bocaccino {
   grid-area: bocaccino;
   width: 150px;
   height: 150px;
 }
-.divMasa .divIdeas #foto-hojasv {
+.divMasa-rowReverse .divIdeas #foto-hojasv {
   grid-area: verdes;
   width: 150px;
   height: 300px;
 }
-.divMasa .divIdeas #foto-papasyhuevo {
+.divMasa-rowReverse .divIdeas #foto-papasyhuevo {
   width: 300px;
   height: 150px;
   grid-area: papas;
 }
-.divMasa .divIdeas #foto-tomates {
+.divMasa-rowReverse .divIdeas #foto-tomates {
   grid-area: tomates;
   width: 300px;
   height: 150px;
+}
+.divMasa-rowReverse .masaFlex {
+  margin-left: 0px;
+  margin-right: 20px;
 }
 
 /* parte de nosotros*/
@@ -255,11 +281,11 @@ body footer {
   text-align: center;
 }
 
-/*mixin*/
 .infoNos, .infoNos-rowReverse {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
@@ -277,13 +303,21 @@ body footer {
   width: 450px;
   margin-left: 20px;
 }
+.infoNos .textoNos h3, .infoNos-rowReverse .textoNos h3 {
+  text-align: justify;
+}
 
 .infoNos-rowReverse {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+.infoNos-rowReverse .textoNos {
+  margin-left: 0px;
+  margin-right: 20px;
 }
 
 /*medias queries*/
@@ -334,43 +368,55 @@ body footer {
     font-size: 18px;
   }
   /* parte de informacion extra*/
-  .divMasa img {
+  .divMasa img, .divMasa-rowReverse img {
     height: 300px;
     width: 300px;
   }
-  .divMasa .masaFlex {
+  .divMasa .masaFlex, .divMasa-rowReverse .masaFlex {
     width: 320px;
   }
-  .divMasa .masaFlex h2 {
+  .divMasa .masaFlex h2, .divMasa-rowReverse .masaFlex h2 {
     font-size: 18px;
   }
-  .divMasa .masaFlex li {
+  .divMasa .masaFlex h3, .divMasa-rowReverse .masaFlex h3 {
     font-size: 13px;
   }
-  .divMasa .divIdeas {
+  .divMasa iframe, .divMasa-rowReverse iframe {
+    height: 300px;
+    width: 300px;
+  }
+  .divMasa-rowReverse .divIdeas {
     width: 300px;
     height: 300px;
   }
-  .divMasa .divIdeas #foto-anana {
+  .divMasa-rowReverse .divIdeas #foto-anana {
     width: 200px;
     height: 100px;
   }
-  .divMasa .divIdeas #foto-bocaccino {
+  .divMasa-rowReverse .divIdeas #foto-bocaccino {
     width: 100px;
     height: 100px;
   }
-  .divMasa .divIdeas #foto-hojasv {
-    grid-area: verdes;
+  .divMasa-rowReverse .divIdeas #foto-hojasv {
     width: 100px;
     height: 200px;
   }
-  .divMasa .divIdeas #foto-papasyhuevo {
+  .divMasa-rowReverse .divIdeas #foto-papasyhuevo {
     width: 200px;
     height: 100px;
   }
-  .divMasa .divIdeas #foto-tomates {
+  .divMasa-rowReverse .divIdeas #foto-tomates {
     width: 200px;
     height: 100px;
+  }
+  .divMasa-rowReverse .masaFlex {
+    width: 320px;
+  }
+  .divMasa-rowReverse .masaFlex h2 {
+    font-size: 18px;
+  }
+  .divMasa-rowReverse .masaFlex li {
+    font-size: 13px;
   }
   /*contacto*/
   .mainInfo .contactUbi iframe {
@@ -442,6 +488,7 @@ body footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-items: center;
     margin-bottom: 40px;
     margin-top: 40px;
   }
@@ -488,6 +535,76 @@ body footer {
     height: 25px;
     width: 220px;
   }
+  /*informacion*/
+  .divMasa, .divMasa-rowReverse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .divMasa img, .divMasa-rowReverse img {
+    height: 400px;
+    width: 400px;
+  }
+  .divMasa .masaFlex, .divMasa-rowReverse .masaFlex {
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  .divMasa .masaFlex h2, .divMasa-rowReverse .masaFlex h2 {
+    font-size: 25px;
+  }
+  .divMasa .masaFlex h3, .divMasa-rowReverse .masaFlex h3 {
+    font-size: 20px;
+  }
+  .divMasa iframe, .divMasa-rowReverse iframe {
+    height: 400px;
+    width: 400px;
+    margin-top: 20px;
+  }
+  .divMasa-rowReverse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .divMasa-rowReverse .divIdeas {
+    width: 400px;
+    height: 400px;
+  }
+  .divMasa-rowReverse .divIdeas #foto-anana {
+    width: 266px;
+    height: 133px;
+  }
+  .divMasa-rowReverse .divIdeas #foto-bocaccino {
+    width: 133px;
+    height: 133px;
+  }
+  .divMasa-rowReverse .divIdeas #foto-hojasv {
+    width: 133px;
+    height: 266px;
+  }
+  .divMasa-rowReverse .divIdeas #foto-papasyhuevo {
+    width: 266px;
+    height: 133px;
+  }
+  .divMasa-rowReverse .divIdeas #foto-tomates {
+    width: 266px;
+    height: 133px;
+  }
+  .divMasa-rowReverse .masaFlex {
+    width: 400px;
+    margin-top: 40px;
+    margin-right: 0px;
+  }
+  .divMasa-rowReverse .masaFlex h2 {
+    font-size: 25px;
+  }
+  .divMasa-rowReverse .masaFlex li {
+    font-size: 20px;
+  }
 }
 @media (max-width: 480px) {
   /*menu*/
@@ -525,45 +642,61 @@ body footer {
     margin-left: 15pxpx;
     margin-top: 15px;
   }
-  .divMasa {
+  /*informacion*/
+  .divMasa, .divMasa-rowReverse {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  .divMasa img {
+  .divMasa img, .divMasa-rowReverse img {
     height: 300px;
     width: 300px;
   }
-  .divMasa .masaFlex {
+  .divMasa .masaFlex, .divMasa-rowReverse .masaFlex {
     width: 300px;
   }
-  .divMasa .masaFlex h2 {
+  .divMasa .masaFlex h2, .divMasa-rowReverse .masaFlex h2 {
     font-size: 22px;
   }
-  .divMasa .masaFlex li {
+  .divMasa .masaFlex li, .divMasa-rowReverse .masaFlex li {
     font-size: 17px;
   }
-  .divMasa .divIdeas {
+  .divMasa .masaFlex h3, .divMasa-rowReverse .masaFlex h3 {
+    font-size: 17px;
+  }
+  .divMasa iframe, .divMasa-rowReverse iframe {
+    height: 300px;
+    width: 300px;
+  }
+  .divMasa-rowReverse .masaFlex {
+    width: 300px;
+  }
+  .divMasa-rowReverse .masaFlex h2 {
+    font-size: 22px;
+  }
+  .divMasa-rowReverse .masaFlex li {
+    font-size: 17px;
+  }
+  .divMasa-rowReverse .divIdeas {
     width: 300px;
     height: 300px;
   }
-  .divMasa .divIdeas #foto-anana {
+  .divMasa-rowReverse .divIdeas #foto-anana {
     width: 200px;
     height: 100px;
   }
-  .divMasa .divIdeas #foto-bocaccino {
+  .divMasa-rowReverse .divIdeas #foto-bocaccino {
     width: 100px;
     height: 100px;
   }
-  .divMasa .divIdeas #foto-hojasv {
-    grid-area: verdes;
+  .divMasa-rowReverse .divIdeas #foto-hojasv {
     width: 100px;
     height: 200px;
   }
-  .divMasa .divIdeas #foto-papasyhuevo {
+  .divMasa-rowReverse .divIdeas #foto-papasyhuevo {
     width: 200px;
     height: 100px;
   }
-  .divMasa .divIdeas #foto-tomates {
+  .divMasa-rowReverse .divIdeas #foto-tomates {
     width: 200px;
     height: 100px;
   }
