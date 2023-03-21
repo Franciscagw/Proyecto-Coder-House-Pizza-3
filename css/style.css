@@ -343,10 +343,10 @@ body footer {
     margin: 5px;
   }
   .bodymenu .contDiv .menuDiv .pizzaName h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .bodymenu .contDiv .menuDiv .pizzaName h3 {
-    font-size: 15px;
+    font-size: 12px;
   }
   /*nosotros*/
   .infoNos img, .infoNos-rowReverse img {
@@ -468,6 +468,15 @@ body footer {
     font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  /*index*/
+  .mainHome h1 {
+    font-size: 75px;
+  }
+  .mainHome h2 {
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   /*menu*/
   .bodymenu .contDiv {
@@ -615,6 +624,24 @@ body footer {
   }
 }
 @media (max-width: 480px) {
+  /*index*/
+  .mainHome h1 {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .mainHome h2 {
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .homePhotos .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .homePhotos .row img {
+    margin-bottom: 10px;
+  }
   /*menu*/
   .bodymenu .contDiv {
     flex-direction: column;
