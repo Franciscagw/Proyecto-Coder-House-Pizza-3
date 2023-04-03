@@ -2,7 +2,16 @@
 body {
     display: grid;
     grid-template-areas: "navb" "body" "footer";
-    nav{
+
+    nav {
+        a {
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+    /*nav{
         grid-area: navb;
         font-size: 20px; 
         display: inline-block; 
@@ -28,8 +37,8 @@ body {
                     }
                 }
             }  
-        } /* cambiar el color de los links de la nav bar */
-    }
+        }*/
+    
     .body {
         grid-area: body;
         display: flex;
