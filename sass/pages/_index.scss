@@ -15,6 +15,9 @@
 }
 .homePhotos {
     .row {
-        margin:20px;
+        img {
+            object-fit: cover;
+            margin-top: 20px;
+        }
     }
 }

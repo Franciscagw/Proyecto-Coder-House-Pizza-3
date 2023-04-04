@@ -1,43 +1,23 @@
 /* layout con grid de todas las paginas*/
 body {
     display: grid;
-    grid-template-areas: "navb" "body" "footer";
+    grid-template-areas: "nav" "body" "footer";
 
     nav {
-        a {
-            img {
-                height: 50px;
-                width: 50px;
+        div {
+            a {
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .nav-link {
+                font-size: 22px;
+                color: gray;
             }
         }
-    }
-    /*nav{
-        grid-area: navb;
-        font-size: 20px; 
-        display: inline-block; 
-        background-color: black; position: sticky;
-        width: 100%;
-        ul{
-            padding: 0px;
-            display: flex; 
-            align-content: stretch; 
-            flex-direction: row; 
-            flex-wrap: wrap; 
-            justify-content: space-evenly; 
-            align-items: center;
-            li {
-                list-style-type: none;
-                text-decoration: none;
-                a {
-                    text-decoration: none;
-                    color: white;
-                    img {
-                        width: 100px;
-                        height: 100px;
-                    }
-                }
-            }  
-        }*/
+       
+    }  
     
     .body {
         grid-area: body;
@@ -54,9 +34,15 @@ body {
         margin: 50px;
         padding-top: 50px;
         border-top: solid 1px grey;
+        h4 {
+            font-size: 18px;
+        }
         h3 {
             a {
-                color: white;
+                font-size: 22px;
+                color: grey;
+                text-align: middle;
+                
             }
         }
     }

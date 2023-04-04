@@ -1,29 +1,27 @@
 @media screen and (max-width:1024px) {
-
     /*menu*/
     .bodymenu {
         .contDiv {
+            flex-direction: column;
             .menuDiv{
-                width: 300px;
+                width: 600px;
                 margin: 15px;
                 img {
-                    height: 150px;
-                    width: 150px;
+                    height: 300px;
+                    width: 300px;
                 }
                 .pizzaName {
-                    margin: 5px;
+                    margin: 20px;
                     h2 {
-                        font-size: 18px;
+                        font-size: 30px;
                     }
                     h3 {    
-                        font-size: 12px;
+                        font-size: 26px;
                     }            
                 }
             }
         }
     }
-
-
     /*nosotros*/
     .infoNos {
         img {
@@ -55,21 +53,19 @@
         }   
     }
    }
-
-
     /* parte de informacion extra*/
     .divMasa {
         img {
-            height: 300px;
-            width: 300px;
+            height: 400px;
+            width: 320px;
         }
         .masaFlex {
             width: 320px;
             h2 {
-                font-size: 18px;
+                font-size: 22px;
             }
             h3 {
-                font-size: 13px;
+                font-size: 20px;
             }
         }
       
@@ -115,8 +111,6 @@
 
 
     }
-
-
     /*contacto*/
     .mainInfo {
         .contactUbi {

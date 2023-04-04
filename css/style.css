@@ -16,38 +16,15 @@ body {
 /* layout con grid de todas las paginas*/
 body {
   display: grid;
-  grid-template-areas: "navb" "body" "footer";
-  /*nav{
-      grid-area: navb;
-      font-size: 20px; 
-      display: inline-block; 
-      background-color: black; position: sticky;
-      width: 100%;
-      ul{
-          padding: 0px;
-          display: flex; 
-          align-content: stretch; 
-          flex-direction: row; 
-          flex-wrap: wrap; 
-          justify-content: space-evenly; 
-          align-items: center;
-          li {
-              list-style-type: none;
-              text-decoration: none;
-              a {
-                  text-decoration: none;
-                  color: white;
-                  img {
-                      width: 100px;
-                      height: 100px;
-                  }
-              }
-          }  
-      }*/
+  grid-template-areas: "nav" "body" "footer";
 }
-body nav a img {
+body nav div a img {
   height: 50px;
   width: 50px;
+}
+body nav div .nav-link {
+  font-size: 22px;
+  color: gray;
 }
 body .body {
   grid-area: body;
@@ -65,8 +42,13 @@ body footer {
   padding-top: 50px;
   border-top: solid 1px grey;
 }
+body footer h4 {
+  font-size: 18px;
+}
 body footer h3 a {
-  color: white;
+  font-size: 22px;
+  color: grey;
+  text-align: middle;
 }
 
 /*pages*/
@@ -84,8 +66,9 @@ body footer h3 a {
   margin-bottom: 50px;
 }
 
-.homePhotos .row {
-  margin: 20px;
+.homePhotos .row img {
+  object-fit: cover;
+  margin-top: 20px;
 }
 
 /*parte de menu*/
@@ -98,15 +81,15 @@ body footer h3 a {
   justify-content: center;
 }
 .bodymenu .contDiv .menuDiv {
-  width: 400px;
+  width: 450px;
   border: solid 2px white;
   border-radius: 20px;
   display: flex;
-  margin: 30px;
+  margin: 15px;
 }
 .bodymenu .contDiv .menuDiv img {
-  height: 200px;
-  width: 200px;
+  height: 225px;
+  width: 225px;
   border-radius: 20px;
 }
 .bodymenu .contDiv .menuDiv .pizzaName {
@@ -116,10 +99,10 @@ body footer h3 a {
   margin: 10px;
 }
 .bodymenu .contDiv .menuDiv .pizzaName h2 {
-  font-size: 22px;
+  font-size: 24px;
 }
 .bodymenu .contDiv .menuDiv .pizzaName h3 {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 /* parte de contacto*/
@@ -164,7 +147,6 @@ body footer h3 a {
 .mainInfo h3 {
   width: 900px;
   align-items: center;
-  display: inline;
   font-size: 40px;
   text-align: justify;
   margin-bottom: 40px;
@@ -192,6 +174,7 @@ body footer h3 a {
   list-style-type: none;
 }
 .mainInfo form ul li {
+  padding: 10px;
   margin-bottom: 20px;
 }
 .mainInfo form ul li label {
@@ -332,22 +315,25 @@ body footer h3 a {
 /*medias queries*/
 @media screen and (max-width: 1024px) {
   /*menu*/
+  .bodymenu .contDiv {
+    flex-direction: column;
+  }
   .bodymenu .contDiv .menuDiv {
-    width: 300px;
+    width: 600px;
     margin: 15px;
   }
   .bodymenu .contDiv .menuDiv img {
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
   }
   .bodymenu .contDiv .menuDiv .pizzaName {
-    margin: 5px;
+    margin: 20px;
   }
   .bodymenu .contDiv .menuDiv .pizzaName h2 {
-    font-size: 18px;
+    font-size: 30px;
   }
   .bodymenu .contDiv .menuDiv .pizzaName h3 {
-    font-size: 12px;
+    font-size: 26px;
   }
   /*nosotros*/
   .infoNos img, .infoNos-rowReverse img {
@@ -378,17 +364,17 @@ body footer h3 a {
   }
   /* parte de informacion extra*/
   .divMasa img, .divMasa-rowReverse img {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 320px;
   }
   .divMasa .masaFlex, .divMasa-rowReverse .masaFlex {
     width: 320px;
   }
   .divMasa .masaFlex h2, .divMasa-rowReverse .masaFlex h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .divMasa .masaFlex h3, .divMasa-rowReverse .masaFlex h3 {
-    font-size: 13px;
+    font-size: 20px;
   }
   .divMasa iframe, .divMasa-rowReverse iframe {
     height: 300px;
@@ -457,19 +443,6 @@ body footer h3 a {
   }
 }
 @media screen and (max-width: 768px) {
-  /*Nav bar*/
-  body nav {
-    font-size: 10px;
-  }
-  body nav ul li a img {
-    width: 50px;
-    height: 50px;
-  }
-  body .body .titlee {
-    font-size: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
   /*index*/
   .mainHome h1 {
     font-size: 75px;
@@ -480,9 +453,6 @@ body footer h3 a {
     margin-bottom: 40px;
   }
   /*menu*/
-  .bodymenu .contDiv {
-    flex-direction: column;
-  }
   .bodymenu .contDiv .menuDiv {
     width: 400px;
     margin: 20px;
@@ -636,29 +606,28 @@ body footer h3 a {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-  .homePhotos .row img {
-    margin: 10px;
-  }
   /*menu*/
   .bodymenu .contDiv {
     flex-direction: column;
   }
   .bodymenu .contDiv .menuDiv {
+    flex-direction: column;
     width: 300px;
+    height: 600px;
     margin: 15px;
   }
   .bodymenu .contDiv .menuDiv img {
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
   }
   .bodymenu .contDiv .menuDiv .pizzaName {
-    margin: 10px;
+    margin: 20px;
   }
   .bodymenu .contDiv .menuDiv .pizzaName h2 {
-    font-size: 15px;
+    font-size: 30px;
   }
   .bodymenu .contDiv .menuDiv .pizzaName h3 {
-    font-size: 10px;
+    font-size: 26px;
   }
   /*nosotros*/
   .infoNos, .infoNos-rowReverse {
