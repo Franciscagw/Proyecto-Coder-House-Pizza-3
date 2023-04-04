@@ -1,5 +1,4 @@
 @media screen and (max-width: 768px) {
-
     /*index*/
     .mainHome { 
         h1 {
@@ -11,7 +10,6 @@
             margin-bottom: 40px;
         }
     }
-  
    /*menu*/
     .bodymenu {
         .contDiv {
@@ -34,8 +32,6 @@
             }
         }
     }
-   
-
     /*nosotros*/
     .infoNos {
         @include flex (column);
@@ -56,8 +52,6 @@
             margin-top: 15px;
         }
     }
-    
-
     /*contacto*/
     .mainInfo {
         .contactUbi {
@@ -92,11 +86,8 @@
                     }
                 }
             }
-        }
-        
+        }  
     }
-
-
     /*informacion*/
     .divMasa {
        @include flex (column);

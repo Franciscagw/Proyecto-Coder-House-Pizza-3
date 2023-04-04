@@ -39,20 +39,20 @@
         }
     }
    .infoNos-rowReverse {
-    img {
-        width: 310px;
-        height: 310px;
-    }
-    .textoNos {
-        width: 310px;
-        h2 {
-            font-size: 25px;
+        img {
+            width: 310px;
+            height: 310px;
         }
-        h3 {
-            font-size: 18px;
-        }   
+       .textoNos {
+            width: 310px;
+            h2 {
+                font-size: 25px;
+            }
+            h3 {
+                font-size: 18px;
+            }   
+        }
     }
-   }
     /* parte de informacion extra*/
     .divMasa {
         img {
@@ -67,8 +67,7 @@
             h3 {
                 font-size: 20px;
             }
-        }
-      
+        }     
         iframe {
             height: 300px;
             width: 300px;
@@ -107,9 +106,7 @@
             li {
                 font-size: 13px;
             }
-        } 
-
-
+        }
     }
     /*contacto*/
     .mainInfo {

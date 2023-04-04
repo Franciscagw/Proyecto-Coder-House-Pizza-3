@@ -2,7 +2,6 @@
 body {
     display: grid;
     grid-template-areas: "nav" "body" "footer";
-
     nav {
         div {
             a {
@@ -15,10 +14,8 @@ body {
                 font-size: 22px;
                 color: gray;
             }
-        }
-       
+        }  
     }  
-    
     .body {
         grid-area: body;
         display: flex;
@@ -41,8 +38,7 @@ body {
             a {
                 font-size: 22px;
                 color: grey;
-                text-align: middle;
-                
+                text-align: middle;         
             }
         }
     }
